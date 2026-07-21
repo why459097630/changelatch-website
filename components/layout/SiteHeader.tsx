@@ -1,0 +1,131 @@
+"use client";
+
+import Link from "next/link";
+
+
+type HeaderNavItem = {
+  label: string;
+  href?: string;
+  isActive?: boolean;
+  onClick?: () => void;
+};
+
+type SiteHeaderProps = {
+  compact?: boolean;
+  navItems?: HeaderNavItem[];
+  rightSlot?: React.ReactNode;
+};
+
+export default function SiteHeader({
+  compact = false,
+  navItems = [],
+  rightSlot,
+}: SiteHeaderProps) {
+  return (
+    <header className="sticky top-0 z-30 mx-auto max-w-7xl px-4 pt-3 transition-all duration-300 sm:px-6 sm:pt-4">
+      <div
+className={`grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 rounded-full border backdrop-blur-2xl transition-all duration-300 md:grid-cols-[1fr_auto_1fr] ${
+  compact
+    ? "border-white/45 bg-white/28 px-3 py-2 shadow-[0_14px_34px_rgba(15,23,42,0.10)] ring-1 ring-white/20 sm:px-4"
+    : "border-white/35 bg-white/18 px-3.5 py-2.5 shadow-[0_18px_44px_rgba(15,23,42,0.08)] ring-1 ring-white/16 sm:px-5"
+}`}
+      >
+        <div
+          className={`flex items-center justify-self-start transition-all duration-300 ${
+            compact ? "gap-3" : "gap-3.5"
+          }`}
+        >
+          <Link
+            href="/"
+            aria-label="Go to home page"
+            className={`group relative inline-flex items-center justify-center bg-gradient-to-br from-indigo-500 to-fuchsia-500 shadow-[0_10px_22px_rgba(99,102,241,0.20)] ring-1 ring-white/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.985] ${
+              compact ? "h-[42px] w-[42px] rounded-xl" : "h-[46px] w-[46px] rounded-2xl"
+            }`}
+          >
+            <img
+              src="/logo.png"
+              alt="Code Replace Tool logo"
+              className={`object-contain scale-280 transition-all duration-300 ${
+                compact ? "h-6 w-6" : "h-7 w-7"
+              }`}
+            />
+          </Link>
+
+          <div className="flex flex-col justify-center self-center leading-none -translate-y-[1px]">
+            <div
+className={`truncate font-semibold tracking-[0.01em] text-[#0f172a] transition-all duration-300 ${
+  compact ? "text-[15px]" : "text-[15px]"
+}`}
+            >
+              PatchPilot
+            </div>
+            <div
+className={`hidden font-medium text-[#8a96b2] transition-all duration-300 sm:block ${
+  compact ? "mt-[3px] text-[10px]" : "mt-[4px] text-[11px]"
+}`}
+            >
+              Safer, faster AI-assisted code patching
+            </div>
+          </div>
+        </div>
+
+        <nav
+          className={`hidden items-center justify-self-center gap-2 font-medium transition-all duration-300 md:flex ${
+            compact ? "text-[13px]" : "text-sm"
+          }`}
+        >
+          {navItems.map((item) => {
+            if (item.onClick) {
+              return (
+                <button
+                  key={item.label}
+                  type="button"
+                  onClick={item.onClick}
+                  className={`group relative inline-flex items-center rounded-full px-3 py-1.5 transition-all duration-300 ${
+                    item.isActive
+                      ? "text-[#0f172a]"
+                      : "text-[#64748b] hover:bg-white/40 hover:text-[#0f172a]"
+                  }`}
+                >
+                  <span className="relative z-10">{item.label}</span>
+                  <span
+                    className={`absolute inset-x-3 bottom-[6px] h-[2px] rounded-full bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-pink-500 transition-all duration-300 ${
+                      item.isActive
+                        ? "opacity-100 scale-x-100"
+                        : "opacity-0 scale-x-0 group-hover:opacity-70 group-hover:scale-x-100"
+                    }`}
+                  />
+                </button>
+              );
+            }
+
+            return (
+              <a
+                key={item.label}
+                href={item.href}
+                className={`group relative inline-flex items-center rounded-full px-3 py-1.5 transition-all duration-300 ${
+                  item.isActive
+                    ? "text-[#0f172a]"
+                    : "text-[#64748b] hover:bg-white/40 hover:text-[#0f172a]"
+                }`}
+              >
+                <span className="relative z-10">{item.label}</span>
+                <span
+                  className={`absolute inset-x-3 bottom-[6px] h-[2px] rounded-full bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-pink-500 transition-all duration-300 ${
+                    item.isActive
+                      ? "opacity-100 scale-x-100"
+                      : "opacity-0 scale-x-0 group-hover:opacity-70 group-hover:scale-x-100"
+                  }`}
+                />
+              </a>
+            );
+          })}
+        </nav>
+
+        <div className="flex min-w-0 items-center justify-self-end gap-2 sm:gap-3">
+          {rightSlot}
+        </div>
+      </div>
+    </header>
+  );
+}
