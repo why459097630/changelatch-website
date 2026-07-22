@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import {
-  createLicenseKey,
   getLicensePurchaseUnit,
   getPayPalAccessToken,
   getPayPalBaseUrl,
@@ -72,6 +71,40 @@ async function capturePayPalOrder(orderId: string, accessToken: string) {
   return data;
 }
 
+async function issueLicense(payload: Record<string, unknown>) {
+  const issueLicenseUrl = process.env.SUPABASE_ISSUE_LICENSE_URL?.trim();
+
+  if (!issueLicenseUrl) {
+    throw new Error("License issue endpoint is not configured.");
+  }
+
+  const response = await fetch(issueLicenseUrl, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${process.env.SUPABASE_ISSUE_LICENSE_KEY?.trim()}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+    cache: "no-store",
+  });
+
+  const data = (await response.json().catch(() => null)) as
+    | {
+        ok?: boolean;
+        licenseKey?: string;
+        error?: string;
+      }
+    | null;
+
+  if (!response.ok || !data?.ok || !data.licenseKey) {
+    throw new Error(
+      data?.error || "Failed to issue license.",
+    );
+  }
+
+  return data.licenseKey;
+}
+
 export async function POST(request: Request) {
   try {
     const body = (await request.json().catch(() => null)) as
@@ -116,8 +149,22 @@ export async function POST(request: Request) {
       throw new Error("PayPal payment was not completed.");
     }
 
-    const { licenseEmail } = getLicensePurchaseUnit(completedOrder);
-    const licenseKey = createLicenseKey(paypalOrderId, licenseEmail);
+    const { licenseEmail, purchaseUnit } =
+      getLicensePurchaseUnit(completedOrder);
+
+    const licenseKey = await issueLicense({
+      provider: "paypal",
+      providerOrderId: paypalOrderId,
+      email: licenseEmail,
+      productName: "PatchPilot",
+      status: "paid",
+      testMode: process.env.PAYPAL_ENV !== "live",
+      totalAmount: Number(
+        purchaseUnit.amount?.value || "0",
+      ),
+      currency: purchaseUnit.amount?.currency_code || "USD",
+      purchasedAt: new Date().toISOString(),
+    });
 
     return NextResponse.json({
       ok: true,
@@ -126,6 +173,11 @@ export async function POST(request: Request) {
       licenseKey,
     });
   } catch (error) {
+    console.error(
+      "CAPTURE LICENSE ERROR:",
+      error,
+    );
+
     return NextResponse.json(
       {
         ok: false,
