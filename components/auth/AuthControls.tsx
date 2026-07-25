@@ -124,7 +124,8 @@ const buttonClassName =
       setIsSigningIn(true);
 
       const redirectTo = `${window.location.origin}/auth/callback?next=${encodeURIComponent(nextPath)}`;
-      const { error } = await supabase.auth.signInWithOAuth({
+      console.log("[OAUTH REDIRECT]", redirectTo);
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
           redirectTo,
@@ -133,6 +134,10 @@ const buttonClassName =
             : undefined,
         },
       });
+      console.log("[OAUTH RESULT]", {
+  data,
+  error,
+});
 
       if (error) {
         throw error;

@@ -180,11 +180,11 @@ export default function Home() {
             <div className="relative w-full max-w-[500px] overflow-hidden rounded-[30px] border border-white/80 bg-white/90 shadow-[0_32px_90px_rgba(15,23,42,0.15)] backdrop-blur-xl">
               <div className="flex items-center justify-between border-b border-slate-200/80 bg-white/85 px-5 py-4">
                 <div className="flex items-center gap-3">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 shadow-[0_8px_20px_rgba(99,102,241,0.25)] ring-1 ring-white/30">
+                  <div className="flex h-9 w-9 items-center justify-center">
                     <img
                       src="/logo.png"
                       alt="PatchPilot logo"
-                      className="h-6 w-6 scale-280 object-contain"
+                      className="h-9 w-9 object-contain"
                     />
                   </div>
                   <div>
@@ -857,7 +857,7 @@ export default function Home() {
             <button
               type="button"
               onClick={() => {
-                window.location.href = "/builder";
+                window.location.href = "/pricing";
               }}
               className="group relative inline-flex w-full justify-center overflow-hidden rounded-full bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 px-7 py-3.5 text-sm font-semibold text-white shadow-[0_18px_42px_rgba(236,72,153,0.22)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_24px_52px_rgba(236,72,153,0.30)] active:scale-[0.985] sm:w-auto"
             >

@@ -338,7 +338,7 @@ export default function ResultPage() {
               </div>
 
               <p className="mt-3 text-center text-xs font-medium text-slate-400">
-                Available for Windows
+                Windows Desktop App · v1.0.0
               </p>
             </div>
 

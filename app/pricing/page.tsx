@@ -685,7 +685,7 @@ useEffect(() => {
                       </button>
 
                       <p className="mt-3 text-[12px] font-medium text-slate-400">
-                        Available for Windows
+                      Windows Desktop App · v1.0.0
                       </p>
                     </div>
                   </div>
@@ -937,7 +937,7 @@ useEffect(() => {
               <button
                 type="button"
                 onClick={() => {
-                  window.location.href = "/history";
+                  window.location.href = "/";
                 }}
                 className="flex h-[50px] w-full items-center justify-center gap-2 rounded-[20px] border border-slate-200 bg-white px-5 text-sm font-medium text-[#475569] shadow-[0_8px_20px_rgba(15,23,42,0.03)] transition-all duration-300 hover:-translate-y-0.5 hover:border-indigo-300 hover:text-indigo-600 hover:shadow-[0_14px_30px_rgba(15,23,42,0.08)] active:scale-[0.98]"
               >

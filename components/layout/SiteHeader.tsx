@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import AuthControls from "@/components/auth/AuthControls";
 
 
 type HeaderNavItem = {
@@ -21,6 +23,10 @@ export default function SiteHeader({
   navItems = [],
   rightSlot,
 }: SiteHeaderProps) {
+  const pathname = usePathname();
+
+  const isAdminPage = pathname.startsWith("/admin");
+
   return (
     <header className="sticky top-0 z-30 mx-auto max-w-7xl px-4 pt-3 transition-all duration-300 sm:px-6 sm:pt-4">
       <div
@@ -38,16 +44,14 @@ className={`grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 rounded-full 
           <Link
             href="/"
             aria-label="Go to home page"
-            className={`group relative inline-flex items-center justify-center bg-gradient-to-br from-indigo-500 to-fuchsia-500 shadow-[0_10px_22px_rgba(99,102,241,0.20)] ring-1 ring-white/30 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.985] ${
-              compact ? "h-[42px] w-[42px] rounded-xl" : "h-[46px] w-[46px] rounded-2xl"
+            className={`group relative inline-flex items-center justify-center transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.985] ${
+              compact ? "h-9 w-9" : "h-10 w-10"
             }`}
           >
             <img
               src="/logo.png"
-              alt="Code Replace Tool logo"
-              className={`object-contain scale-280 transition-all duration-300 ${
-                compact ? "h-6 w-6" : "h-7 w-7"
-              }`}
+              alt="PatchPilot logo"
+              className="h-full w-full object-contain"
             />
           </Link>
 
@@ -123,7 +127,7 @@ className={`hidden font-medium text-[#8a96b2] transition-all duration-300 sm:blo
         </nav>
 
         <div className="flex min-w-0 items-center justify-self-end gap-2 sm:gap-3">
-          {rightSlot}
+          {isAdminPage ? <AuthControls nextPath="/admin" /> : rightSlot}
         </div>
       </div>
     </header>
