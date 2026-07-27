@@ -26,7 +26,8 @@ type PaidUser = {
   status: string | null;
   registeredAt: string | null;
   purchaseTime: string | null;
-  deviceCount: number;
+  activeDeviceCount: number;
+  revokedDeviceCount: number;
   lastUsedAt: string | null;
 };
 
@@ -159,7 +160,7 @@ export default function AdminPage() {
     <main className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      <section className="mx-auto min-h-[calc(100vh-80px)] max-w-6xl px-6 py-12">
+      <section className="mx-auto min-h-[calc(100vh-80px)] w-full max-w-[1500px] px-6 py-12">
         {loading ? (
           <div className="w-full rounded-2xl border border-border bg-card p-8 shadow-sm">
             Checking access...
@@ -277,7 +278,10 @@ export default function AdminPage() {
                         购买时间
                       </th>
                       <th className="border-b p-3 text-left">
-                        设备数量
+                        当前绑定设备
+                      </th>
+                      <th className="border-b p-3 text-left">
+                        历史解绑设备
                       </th>
                       <th className="border-b p-3 text-left">
                         最后使用时间
@@ -301,7 +305,10 @@ export default function AdminPage() {
                           {formatDateTime(user.purchaseTime)}
                         </td>
                         <td className="border-b p-3">
-                          {user.deviceCount}
+                          {user.activeDeviceCount}
+                        </td>
+                        <td className="border-b p-3">
+                          {user.revokedDeviceCount}
                         </td>
                         <td className="border-b p-3">
                           {formatDateTime(user.lastUsedAt)}

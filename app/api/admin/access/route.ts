@@ -309,7 +309,8 @@ export async function GET(request: Request) {
             ),
             license_activations (
               id,
-              last_check_at
+              last_check_at,
+              revoked_at
             )
           `,
           {
@@ -395,7 +396,14 @@ export async function GET(request: Request) {
         status: item.status,
         registeredAt: item.created_at,
         purchaseTime: item.license_orders?.[0]?.created_at || null,
-        deviceCount: item.license_activations?.length || 0,
+        activeDeviceCount:
+          item.license_activations?.filter(
+            (activation) => !activation.revoked_at,
+          ).length || 0,
+        revokedDeviceCount:
+          item.license_activations?.filter(
+            (activation) => activation.revoked_at,
+          ).length || 0,
         lastUsedAt:
           item.license_activations?.reduce(
             (latest, activation) =>
