@@ -676,16 +676,16 @@ useEffect(() => {
                         </div>
                       </div>
 
-                      <button
-                        type="button"
+                      <a
+                        href="https://github.com/why459097630/patchpilot/releases/latest/download/PatchPilot-Setup.exe"
                         className="mt-5 inline-flex h-[50px] w-full min-w-[190px] items-center justify-center gap-2 rounded-[20px] border border-fuchsia-200 bg-white/90 px-5 text-sm font-semibold text-fuchsia-700 shadow-[0_12px_30px_rgba(217,70,239,0.10)] transition-all duration-300 hover:-translate-y-0.5 hover:border-fuchsia-300 hover:bg-fuchsia-50 hover:shadow-[0_20px_42px_rgba(217,70,239,0.20)] active:scale-[0.97] sm:w-auto"
                       >
                         <Download className="h-4 w-4" />
                         <span>Download PatchPilot</span>
-                      </button>
+                      </a>
 
                       <p className="mt-3 text-[12px] font-medium text-slate-400">
-                      Windows Desktop App · v1.0.0
+                      Windows 10/11 · Desktop App · v1.0.0
                       </p>
                     </div>
                   </div>

@@ -317,8 +317,7 @@ export default function ResultPage() {
             <div className="mt-7">
               <div className="grid gap-3 sm:grid-cols-2">
                 <a
-                  href="/downloads/PatchPilot-Setup.exe"
-                  download
+                  href="https://github.com/why459097630/patchpilot/releases/latest/download/PatchPilot-Setup.exe"
                   className="group flex h-[54px] w-full items-center justify-center gap-2 rounded-[20px] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 px-6 text-sm font-semibold text-white shadow-[0_28px_60px_rgba(236,72,153,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_35px_80px_rgba(236,72,153,0.40)] active:scale-[0.97]"
                 >
                   <Download className="h-4 w-4" />
@@ -338,7 +337,7 @@ export default function ResultPage() {
               </div>
 
               <p className="mt-3 text-center text-xs font-medium text-slate-400">
-                Windows Desktop App · v1.0.0
+                Windows 10/11 · Desktop App · v1.0.0
               </p>
             </div>
 
