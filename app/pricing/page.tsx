@@ -562,9 +562,9 @@ useEffect(() => {
       <SiteHeader compact={isHeaderCompact} navItems={[]} />
         <section className="relative z-10 mx-auto max-w-5xl px-4 pb-16 pt-10 sm:px-6 md:pb-20 md:pt-16">
           <div className="text-left sm:text-center">
-            <h1 className="text-[34px] font-extrabold leading-[1.04] tracking-[-0.05em] sm:text-5xl md:text-6xl">Get PatchPilot</h1>
+            <h1 className="text-[34px] font-extrabold leading-[1.04] tracking-[-0.05em] sm:text-5xl md:text-6xl">Get ChangeLatch</h1>
             <p className="mt-4 text-sm leading-7 text-[#64748b] md:text-base">
-              Purchase PatchPilot and safely apply AI-generated code changes with precise PATCH workflows.
+              Purchase ChangeLatch and safely apply AI-generated code changes with precise PATCH workflows.
             </p>
           </div>
         </section>
@@ -579,9 +579,9 @@ useEffect(() => {
 
       <section className="relative z-10 mx-auto max-w-5xl px-4 pb-16 pt-10 sm:px-6 md:pb-20 md:pt-16">
         <div className="mb-8 text-left sm:text-center md:mb-10">
-          <h1 className="text-[34px] font-extrabold leading-[1.04] tracking-[-0.05em] sm:text-5xl md:text-6xl">Get PatchPilot</h1>
+          <h1 className="text-[34px] font-extrabold leading-[1.04] tracking-[-0.05em] sm:text-5xl md:text-6xl">Get ChangeLatch</h1>
           <p className="mt-4 text-sm leading-7 text-[#64748b] md:text-base">
-            Purchase PatchPilot and apply AI-generated code changes faster, safer, and with full control.
+            Purchase ChangeLatch and apply AI-generated code changes faster, safer, and with full control.
           </p>
         </div>
 
@@ -608,7 +608,7 @@ useEffect(() => {
                           Prepare your project
                         </div>
                         <div className="mt-2 text-[13px] leading-6 text-slate-500">
-                          Select your project in PatchPilot, then generate the prompt and ZIP package.
+                          Select your project in ChangeLatch, then generate the prompt and ZIP package.
                         </div>
                       </div>
 
@@ -632,7 +632,7 @@ useEffect(() => {
                           Apply safely
                         </div>
                         <div className="mt-2 text-[13px] leading-6 text-slate-500">
-                          Paste the PATCH into PatchPilot, verify the matches, and apply the changes.
+                          Paste the PATCH into ChangeLatch, verify the matches, and apply the changes.
                         </div>
                       </div>
                     </div>
@@ -652,11 +652,11 @@ useEffect(() => {
 
                     <div className="relative z-10">
                       <h2 className="text-[18px] font-semibold tracking-tight text-[#0f172a]">
-                        Try PatchPilot before you buy
+                        Try ChangeLatch before you buy
                       </h2>
 
                       <p className="mt-2 max-w-xl text-[13px] leading-6 text-slate-500">
-                        Download PatchPilot and try the AI ZIP-to-PATCH workflow before purchasing a license.
+                        Download ChangeLatch and try the AI ZIP-to-PATCH workflow before purchasing a license.
                       </p>
 
                       <div className="mt-4 space-y-2.5">
@@ -677,11 +677,11 @@ useEffect(() => {
                       </div>
 
                       <a
-                        href="https://github.com/why459097630/patchpilot/releases/latest/download/PatchPilot-Setup.exe"
+                        href="https://github.com/why459097630/changelatch/releases/latest/download/ChangeLatch-Setup.exe"
                         className="mt-5 inline-flex h-[50px] w-full min-w-[190px] items-center justify-center gap-2 rounded-[20px] border border-fuchsia-200 bg-white/90 px-5 text-sm font-semibold text-fuchsia-700 shadow-[0_12px_30px_rgba(217,70,239,0.10)] transition-all duration-300 hover:-translate-y-0.5 hover:border-fuchsia-300 hover:bg-fuchsia-50 hover:shadow-[0_20px_42px_rgba(217,70,239,0.20)] active:scale-[0.97] sm:w-auto"
                       >
                         <Download className="h-4 w-4" />
-                        <span>Download PatchPilot</span>
+                        <span>Download ChangeLatch</span>
                       </a>
 
                       <p className="mt-3 text-[12px] font-medium text-slate-400">
@@ -753,13 +753,13 @@ useEffect(() => {
 
           <div>
             <div className="mb-3 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
-              PatchPilot license
+              ChangeLatch license
             </div>
 
             <aside className="relative overflow-hidden rounded-[26px] bg-white/78 shadow-[0_24px_60px_rgba(236,72,153,0.14)] ring-1 ring-white/60 backdrop-blur-xl md:rounded-[34px]">
             <div className="border-b border-slate-200/70 px-5 py-4 md:px-6 md:py-5">
               <h2 className="text-xl font-bold tracking-[-0.03em] text-[#0f172a] md:text-2xl">Choose your license</h2>
-              <p className="mt-2 text-sm leading-6 text-slate-500">One-time purchase license for PatchPilot.</p>
+              <p className="mt-2 text-sm leading-6 text-slate-500">One-time purchase license for ChangeLatch.</p>
             </div>
 
             <div className="space-y-5 px-5 py-5 md:px-6 md:py-6">
@@ -836,7 +836,7 @@ useEffect(() => {
                   className="mt-2 w-full rounded-[18px] border border-slate-200 bg-white/90 px-4 py-3 text-sm text-[#0f172a] outline-none transition placeholder:text-slate-400 focus:border-fuchsia-400 focus:ring-4 focus:ring-fuchsia-100/70"
                 />
                 <p className="mt-2 text-[12px] leading-5 text-slate-500">
-                  Your license key will be linked to this email. Use both to activate PatchPilot.
+                  Your license key will be linked to this email. Use both to activate ChangeLatch.
                 </p>
               </div>
 
@@ -909,7 +909,7 @@ useEffect(() => {
 
                   <div className="flex items-start gap-2.5 text-[12px] leading-5 text-slate-600">
                     <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
-                    <span>Activate PatchPilot on up to 2 devices</span>
+                    <span>Activate ChangeLatch on up to 2 devices</span>
                   </div>
                 </div>
               </div>

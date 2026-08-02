@@ -44,7 +44,7 @@ async function capturePayPalOrder(orderId: string, accessToken: string) {
         Accept: "application/json",
         Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
-        "PayPal-Request-Id": `patchpilot-license-capture-${orderId}`,
+        "PayPal-Request-Id": `changelatch-license-capture-${orderId}`,
         Prefer: "return=representation",
       },
       body: "{}",
@@ -156,7 +156,7 @@ export async function POST(request: Request) {
       provider: "paypal",
       providerOrderId: paypalOrderId,
       email: licenseEmail,
-      productName: "PatchPilot",
+      productName: "ChangeLatch Personal License",
       status: "paid",
       testMode: process.env.PAYPAL_ENV !== "live",
       totalAmount: Number(

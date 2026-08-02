@@ -50,25 +50,25 @@ className={`grid grid-cols-[minmax(0,1fr)_auto] items-center gap-3 rounded-full 
           >
             <img
               src="/logo.png"
-              alt="PatchPilot logo"
+              alt="ChangeLatch logo"
               className="h-full w-full object-contain"
             />
           </Link>
 
-          <div className="flex flex-col justify-center self-center leading-none -translate-y-[1px]">
+          <div className="flex flex-col justify-center self-center -translate-y-[1px]">
             <div
-className={`truncate font-semibold tracking-[0.01em] text-[#0f172a] transition-all duration-300 ${
+className={`truncate font-semibold leading-[1.2] tracking-[0.01em] text-[#0f172a] transition-all duration-300 ${
   compact ? "text-[15px]" : "text-[15px]"
 }`}
             >
-              PatchPilot
+              ChangeLatch
             </div>
             <div
-className={`hidden font-medium text-[#8a96b2] transition-all duration-300 sm:block ${
+className={`hidden font-medium leading-[1.3] text-[#8a96b2] transition-all duration-300 sm:block ${
   compact ? "mt-[3px] text-[10px]" : "mt-[4px] text-[11px]"
 }`}
             >
-              Safer, faster AI-assisted code patching
+              Review AI changes. Apply safely.
             </div>
           </div>
         </div>

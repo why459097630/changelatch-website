@@ -3,8 +3,8 @@ import "./globals.css";
 import PageViewTracker from "@/components/analytics/PageViewTracker";
 
 export const metadata = {
-  title: "PatchPilot",
-  description: "Safer, faster AI-assisted code patching",
+  title: "ChangeLatch",
+  description: "Review AI changes. Apply safely.",
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}) {

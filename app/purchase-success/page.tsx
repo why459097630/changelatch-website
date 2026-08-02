@@ -155,12 +155,12 @@ export default function ResultPage() {
         <p className="mt-3 text-lg text-[#64748b]">
           {hasError
             ? "We could not confirm your PayPal payment."
-            : "Your PatchPilot license is ready."}
+            : "Your ChangeLatch license is ready."}
         </p>
 
         {!loading && !hasError ? (
           <p className="mt-2 text-sm text-slate-500">
-            Save these details to activate PatchPilot.
+            Save these details to activate ChangeLatch.
           </p>
         ) : null}
 
@@ -275,7 +275,7 @@ export default function ResultPage() {
             </div>
 
             <div className="mb-3 mt-6 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
-              Activate PatchPilot
+              Activate ChangeLatch
             </div>
 
             <div className="relative grid overflow-hidden gap-5 rounded-[22px] border border-fuchsia-100/90 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(253,244,255,0.70)_48%,rgba(255,241,242,0.56)_100%)] p-5 shadow-[0_24px_70px_rgba(217,70,239,0.10),0_0_42px_rgba(244,114,182,0.10)] backdrop-blur-xl sm:grid-cols-2 sm:gap-8">
@@ -285,7 +285,7 @@ export default function ResultPage() {
 
               <div className="relative z-10 space-y-1 text-sm leading-6 text-slate-600">
                 <p>Save your license email and License Key now.</p>
-                <p>Open PatchPilot, enter both in the activation section, and activate your license.</p>
+                <p>Open ChangeLatch, enter both in the activation section, and activate your license.</p>
                 <p>They may not be shown again after you leave this page.</p>
               </div>
 
@@ -317,11 +317,11 @@ export default function ResultPage() {
             <div className="mt-7">
               <div className="grid gap-3 sm:grid-cols-2">
                 <a
-                  href="https://github.com/why459097630/patchpilot/releases/latest/download/PatchPilot-Setup.exe"
+                  href="https://github.com/why459097630/changelatch/releases/latest/download/ChangeLatch-Setup.exe"
                   className="group flex h-[54px] w-full items-center justify-center gap-2 rounded-[20px] bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 px-6 text-sm font-semibold text-white shadow-[0_28px_60px_rgba(236,72,153,0.28)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_35px_80px_rgba(236,72,153,0.40)] active:scale-[0.97]"
                 >
                   <Download className="h-4 w-4" />
-                  <span>Download PatchPilot</span>
+                  <span>Download ChangeLatch</span>
                 </a>
 
                 <button

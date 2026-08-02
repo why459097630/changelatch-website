@@ -159,7 +159,7 @@ export default function Home() {
 >
   <div className="absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,0.16)_40%,transparent_72%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
   <div className="relative flex items-center justify-center gap-2">
-    <span className="text-[15px] font-bold tracking-[-0.01em]">Get PatchPilot</span>
+    <span className="text-[15px] font-bold tracking-[-0.01em]">Get ChangeLatch</span>
     <ArrowRight className="h-[15px] w-[15px] text-white/80 transition-transform duration-300 group-hover:translate-x-0.5" />
   </div>
 </button>
@@ -183,12 +183,12 @@ export default function Home() {
                   <div className="flex h-9 w-9 items-center justify-center">
                     <img
                       src="/logo.png"
-                      alt="PatchPilot logo"
+                      alt="ChangeLatch logo"
                       className="h-9 w-9 object-contain"
                     />
                   </div>
                   <div>
-                    <div className="text-sm font-extrabold tracking-[-0.02em] text-[#0f172a]">PatchPilot</div>
+                    <div className="text-sm font-extrabold tracking-[-0.02em] text-[#0f172a]">ChangeLatch</div>
                     <div className="text-[11px] font-medium text-[#94a3b8]">my-project</div>
                   </div>
                 </div>
@@ -450,7 +450,7 @@ export default function Home() {
             See how AI coding workflows compare
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-[1.8] text-[#64748b] md:mt-6 md:text-[17px] md:leading-[1.9]">
-            Compare manual editing, AI agents, and PatchPilot across speed, safety, accuracy, cost, and setup requirements.
+            Compare manual editing, AI agents, and ChangeLatch across speed, safety, accuracy, cost, and setup requirements.
           </p>
         </div>
 
@@ -469,7 +469,7 @@ export default function Home() {
                     AI agent
                   </th>
                   <th className="px-5 py-4 text-center text-[13px] font-extrabold tracking-[-0.01em] text-[#0f172a]">
-                    PatchPilot
+                    ChangeLatch
                   </th>
                 </tr>
               </thead>
@@ -629,7 +629,7 @@ export default function Home() {
 
       <section id="how-it-works" className="order-1 scroll-mt-28 mx-auto max-w-7xl px-5 py-14 sm:px-6 md:py-20">
         <div className="mb-9 md:mb-12">
-          <div className="mb-3 text-center text-sm font-semibold tracking-[0.14em] text-indigo-400">Why PatchPilot</div>
+          <div className="mb-3 text-center text-sm font-semibold tracking-[0.14em] text-indigo-400">Why ChangeLatch</div>
           <h2 className="text-center text-[34px] font-extrabold leading-[1.06] tracking-[-0.045em] text-[#0f172a] sm:text-4xl md:text-[54px] md:leading-[1.04]">Make AI-assisted development faster, safer, and more cost-effective</h2>
           <div className="mt-6 h-px w-10 bg-gradient-to-r from-indigo-300/22 via-indigo-200/16 to-transparent" />
         </div>
@@ -692,14 +692,14 @@ export default function Home() {
                 <div className="mb-2 inline-flex rounded-full border border-indigo-200/55 bg-indigo-50/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-indigo-500">
                   Overview
                 </div>
-                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">What is PatchPilot?</h3>
+                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">What is ChangeLatch?</h3>
               </div>
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6172d6] to-[#7c88e8] text-white shadow-[0_8px_18px_rgba(99,102,241,0.11)]">
                 <HelpCircle className="h-5 w-5" />
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              PatchPilot helps developers safely apply AI-generated code changes. AI creates the changes, and PatchPilot precisely matches, applies, backs up, and verifies those changes.
+              ChangeLatch helps developers safely apply AI-generated code changes. AI creates the changes, and ChangeLatch precisely matches, applies, backs up, and verifies those changes.
             </p>
           </div>
 
@@ -709,14 +709,14 @@ export default function Home() {
                 <div className="mb-2 inline-flex rounded-full border border-indigo-200/55 bg-indigo-50/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-indigo-500">
                   Comparison
                 </div>
-                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">What is the difference between PatchPilot and ChatGPT/Cursor?</h3>
+                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">What is the difference between ChangeLatch and ChatGPT/Cursor?</h3>
               </div>
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6172d6] to-[#7c88e8] text-white shadow-[0_8px_18px_rgba(99,102,241,0.11)]">
                 <HelpCircle className="h-5 w-5" />
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              PatchPilot does not replace AI coding assistants. It works with tools like ChatGPT and Cursor by turning AI-generated code changes into precise patches that can be safely applied to your project.
+              ChangeLatch does not replace AI coding assistants. It works with tools like ChatGPT and Cursor by turning AI-generated code changes into precise patches that can be safely applied to your project.
             </p>
           </div>
 
@@ -726,14 +726,14 @@ export default function Home() {
                 <div className="mb-2 inline-flex rounded-full border border-indigo-200/55 bg-indigo-50/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-indigo-500">
                   Requirements
                 </div>
-                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">Does PatchPilot require an AI API key?</h3>
+                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">Does ChangeLatch require an AI API key?</h3>
               </div>
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6172d6] to-[#7c88e8] text-white shadow-[0_8px_18px_rgba(99,102,241,0.11)]">
                 <HelpCircle className="h-5 w-5" />
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              No. PatchPilot does not require an AI API key or a local AI model setup. You can use your existing web-based AI assistants to generate code changes.
+              No. ChangeLatch does not require an AI API key or a local AI model setup. You can use your existing web-based AI assistants to generate code changes.
             </p>
           </div>
 
@@ -750,7 +750,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              PatchPilot generates a ZIP project package that needs to be analyzed by an AI tool to understand your project structure and generate a PATCH. Some AI platforms do not support direct ZIP file analysis. Please use an AI tool that supports project file analysis (such as ChatGPT, Claude, etc.).
+              ChangeLatch generates a ZIP project package that needs to be analyzed by an AI tool to understand your project structure and generate a PATCH. Some AI platforms do not support direct ZIP file analysis. Please use an AI tool that supports project file analysis (such as ChatGPT, Claude, etc.).
             </p>
           </div>
 
@@ -760,14 +760,14 @@ export default function Home() {
                 <div className="mb-2 inline-flex rounded-full border border-indigo-200/55 bg-indigo-50/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-indigo-500">
                   AI Costs
                 </div>
-                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">Does PatchPilot increase AI usage costs?</h3>
+                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">Does ChangeLatch increase AI usage costs?</h3>
               </div>
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6172d6] to-[#7c88e8] text-white shadow-[0_8px_18px_rgba(99,102,241,0.11)]">
                 <HelpCircle className="h-5 w-5" />
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              No. PatchPilot helps reduce unnecessary AI usage by avoiding repeated project syncing and large context transfers during code changes.
+              No. ChangeLatch helps reduce unnecessary AI usage by avoiding repeated project syncing and large context transfers during code changes.
             </p>
           </div>
 
@@ -777,14 +777,14 @@ export default function Home() {
                 <div className="mb-2 inline-flex rounded-full border border-indigo-200/55 bg-indigo-50/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-indigo-500">
                   Security
                 </div>
-                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">Is my code safe with PatchPilot?</h3>
+                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">Is my code safe with ChangeLatch?</h3>
               </div>
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6172d6] to-[#7c88e8] text-white shadow-[0_8px_18px_rgba(99,102,241,0.11)]">
                 <HelpCircle className="h-5 w-5" />
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              Yes. PatchPilot uses exact matching, backups, and controlled replacements to keep AI code changes safe and under your control.
+              Yes. ChangeLatch uses exact matching, backups, and controlled replacements to keep AI code changes safe and under your control.
             </p>
           </div>
 
@@ -794,14 +794,14 @@ export default function Home() {
                 <div className="mb-2 inline-flex rounded-full border border-indigo-200/55 bg-indigo-50/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-indigo-500">
                   AI agents
                 </div>
-                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">How does PatchPilot compare to AI agents?</h3>
+                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">How does ChangeLatch compare to AI agents?</h3>
               </div>
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6172d6] to-[#7c88e8] text-white shadow-[0_8px_18px_rgba(99,102,241,0.11)]">
                 <HelpCircle className="h-5 w-5" />
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              PatchPilot delivers AI-agent-like efficiency through a web-based AI + ZIP + PATCH workflow—without local agent setup or separate API costs.
+              ChangeLatch delivers AI-agent-like efficiency through a web-based AI + ZIP + PATCH workflow—without local agent setup or separate API costs.
             </p>
 
           </div>
@@ -817,7 +817,7 @@ export default function Home() {
             Built for safer, controlled code changes
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-[1.8] text-[#64748b] md:mt-6 md:text-[17px] md:leading-[1.9]">
-            PatchPilot keeps every applied change exact, reviewable, backed up, verified, and reversible.
+            ChangeLatch keeps every applied change exact, reviewable, backed up, verified, and reversible.
           </p>
         </div>
 
@@ -830,7 +830,7 @@ export default function Home() {
               Only matched changes are applied
             </h3>
             <p className="mt-3 text-sm leading-7 text-[#64748b]">
-              PatchPilot checks each PATCH against the current project files and alerts you when the original code cannot be matched exactly.
+              ChangeLatch checks each PATCH against the current project files and alerts you when the original code cannot be matched exactly.
             </p>
           </div>
 
@@ -868,7 +868,7 @@ export default function Home() {
             Bring AI-agent-like efficiency to your coding workflow
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-[1.8] text-[#64748b] md:mt-6 md:text-[17px] md:leading-[1.9]">
-            Use web-based AI with PatchPilot to apply code changes safely—without local agent setup or a separate API.
+            Use web-based AI with ChangeLatch to apply code changes safely—without local agent setup or a separate API.
           </p>
           <div className="mt-8 flex justify-center">
             <button
@@ -880,7 +880,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-[linear-gradient(120deg,transparent_0%,rgba(255,255,255,0.16)_40%,transparent_72%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <div className="relative flex items-center justify-center gap-2">
-                <span className="text-[15px] font-bold tracking-[-0.01em]">Get PatchPilot</span>
+                <span className="text-[15px] font-bold tracking-[-0.01em]">Get ChangeLatch</span>
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
               </div>
             </button>
@@ -889,7 +889,8 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 px-5 py-8 text-center text-sm font-medium tracking-[0.02em] text-[#94s3b8] sm:px-6">
-        <div>© 2026 PatchPilot. Safer &amp; faster AI-assisted code patching.</div>
+        <div>© 2026 Think It Done.</div>
+        <div className="mt-1">ChangeLatch is a product of Think It Done.</div>
 
         <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
           <a className="transition hover:text-[#0f172a]" href="/privacy">

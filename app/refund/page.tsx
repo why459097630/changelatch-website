@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LegalPageShell from "@/components/legal/LegalPageShell";
 
 export const metadata: Metadata = {
-  title: "Refund Policy | PatchPilot",
-  description: "Refund Policy for PatchPilot software licenses and digital purchases.",
+  title: "Refund Policy | ChangeLatch",
+  description: "Refund Policy for ChangeLatch software licenses and digital purchases.",
 };
 
 export default function RefundPage() {
@@ -11,7 +11,7 @@ export default function RefundPage() {
     <LegalPageShell
       badge="Refund"
       title="Refund Policy"
-      description="This Refund Policy explains refund conditions for PatchPilot software licenses, digital purchases, and payment issues."
+      description="Think It Done provides licenses for the ChangeLatch desktop software. This Refund Policy explains refund conditions for digital purchases and payment issues."
     >
       <div className="space-y-8 text-[15px] leading-[1.85] text-[#475569]">
         <section>
@@ -19,7 +19,7 @@ export default function RefundPage() {
             Digital software purchases
           </h2>
           <p className="mt-3">
-            PatchPilot is a digital software product. Because license information and digital access may be delivered immediately after purchase, completed purchases are generally non-refundable after successful license delivery.
+            ChangeLatch is a digital software product. Because license information and digital access may be delivered immediately after purchase, completed purchases are generally non-refundable after successful license delivery.
           </p>
           <p className="mt-3">
             If you experience a technical issue that prevents normal use of the software, contact support so the issue can be reviewed.
@@ -40,7 +40,7 @@ export default function RefundPage() {
             License activation issues
           </h2>
           <p className="mt-3">
-            If you cannot activate your PatchPilot license after purchase, contact support with the email address used during payment and relevant purchase information. We will review the issue and provide assistance.
+            If you cannot activate your ChangeLatch license after purchase, contact support with the email address used during payment and relevant purchase information. We will review the issue and provide assistance.
           </p>
         </section>
 

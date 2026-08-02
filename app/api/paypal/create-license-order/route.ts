@@ -62,7 +62,7 @@ export async function POST(request: Request) {
           {
             reference_id: LICENSE_REFERENCE_ID,
             custom_id: licenseEmail,
-            description: "PatchPilot Personal License",
+            description: "ChangeLatch Personal License",
             amount: {
               currency_code: LICENSE_CURRENCY,
               value: LICENSE_PRICE,
@@ -72,7 +72,7 @@ export async function POST(request: Request) {
         payment_source: {
           paypal: {
             experience_context: {
-              brand_name: "PatchPilot",
+              brand_name: "Think It Done",
               landing_page: "LOGIN",
               shipping_preference: "NO_SHIPPING",
               user_action: "PAY_NOW",

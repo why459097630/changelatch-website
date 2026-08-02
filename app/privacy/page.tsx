@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import LegalPageShell from "@/components/legal/LegalPageShell";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | PatchPilot",
-  description: "Privacy Policy for the PatchPilot website and desktop software license service.",
+  title: "Privacy Policy | ChangeLatch",
+  description: "Privacy Policy for the ChangeLatch website and desktop software license service.",
 };
 
 export default function PrivacyPage() {
@@ -11,7 +11,7 @@ export default function PrivacyPage() {
     <LegalPageShell
       badge="Privacy"
       title="Privacy Policy"
-      description="This Privacy Policy explains how PatchPilot handles information related to website usage, software licensing, payments, support requests, and account management."
+      description="This Privacy Policy explains how Think It Done handles information in connection with the ChangeLatch website, desktop application, licensing, payments, and support."
     >
       <div className="space-y-8 text-[15px] leading-[1.85] text-[#475569]">
         <section>
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
             How we use information
           </h2>
           <p className="mt-3">
-            We use collected information to process purchases, deliver and manage licenses, provide customer support, verify activation status, prevent abuse, maintain security, troubleshoot issues, and improve PatchPilot.
+            We use collected information to process purchases, deliver and manage licenses, provide customer support, verify activation status, prevent abuse, maintain security, troubleshoot issues, and improve ChangeLatch.
           </p>
         </section>
 
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
             Payment information
           </h2>
           <p className="mt-3">
-            Payments may be processed by third-party payment providers. PatchPilot does not store complete payment card details. Payment providers process payment information according to their own privacy policies and security practices.
+            Payments may be processed by third-party payment providers. ChangeLatch does not store complete payment card details. Payment providers process payment information according to their own privacy policies and security practices.
           </p>
         </section>
 
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
             Project files and source code
           </h2>
           <p className="mt-3">
-            PatchPilot processes project files locally on your device. We do not upload, store, or access your source code through our servers as part of the code patching workflow.
+            ChangeLatch processes project files locally on your device. We do not upload, store, or access your source code through our servers as part of the code patching workflow.
           </p>
           <p className="mt-3">
             Users may choose to provide project files directly to external AI services such as ChatGPT or Claude according to their own usage decisions and the policies of those services.

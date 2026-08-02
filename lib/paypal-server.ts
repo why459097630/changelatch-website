@@ -2,7 +2,7 @@ import { createHmac } from "node:crypto";
 
 export const LICENSE_PRICE = "29.99";
 export const LICENSE_CURRENCY = "USD";
-export const LICENSE_REFERENCE_ID = "patchpilot-personal-license";
+export const LICENSE_REFERENCE_ID = "changelatch-personal-license";
 export const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 export type PayPalAccessTokenResponse = {
@@ -90,7 +90,7 @@ export function getLicensePurchaseUnit(order: PayPalOrderResponse) {
   );
 
   if (!purchaseUnit) {
-    throw new Error("PayPal order does not contain a PatchPilot license purchase.");
+    throw new Error("PayPal order does not contain a ChangeLatch license purchase.");
   }
 
   const licenseEmail = purchaseUnit.custom_id?.trim().toLowerCase() || "";
@@ -103,7 +103,7 @@ export function getLicensePurchaseUnit(order: PayPalOrderResponse) {
     purchaseUnit.amount?.currency_code !== LICENSE_CURRENCY ||
     purchaseUnit.amount?.value !== LICENSE_PRICE
   ) {
-    throw new Error("PayPal order amount does not match the PatchPilot license price.");
+    throw new Error("PayPal order amount does not match the ChangeLatch license price.");
   }
 
   const completedCapture = purchaseUnit.payments?.captures?.find(
@@ -115,7 +115,7 @@ export function getLicensePurchaseUnit(order: PayPalOrderResponse) {
       completedCapture.amount?.currency_code !== LICENSE_CURRENCY ||
       completedCapture.amount?.value !== LICENSE_PRICE
     ) {
-      throw new Error("Captured PayPal amount does not match the PatchPilot license price.");
+      throw new Error("Captured PayPal amount does not match the ChangeLatch license price.");
     }
   }
 
@@ -135,9 +135,9 @@ export function createLicenseKey(paypalOrderId: string, licenseEmail: string) {
   }
 
   const digest = createHmac("sha256", signingSecret)
-    .update(`patchpilot:${paypalOrderId}:${licenseEmail}`)
+    .update(`changelatch:${paypalOrderId}:${licenseEmail}`)
     .digest("hex")
     .toUpperCase();
 
-  return `PP-${digest.slice(0, 4)}-${digest.slice(4, 8)}-${digest.slice(8, 12)}-${digest.slice(12, 16)}`;
+  return `CL-${digest.slice(0, 4)}-${digest.slice(4, 8)}-${digest.slice(8, 12)}-${digest.slice(12, 16)}`;
 }
