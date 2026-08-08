@@ -4,6 +4,9 @@ import LegalPageShell from "@/components/legal/LegalPageShell";
 export const metadata: Metadata = {
   title: "Terms of Service | ChangeLatch",
   description: "Terms of Service for using the ChangeLatch website and desktop software license service.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {

@@ -4,6 +4,9 @@ import LegalPageShell from "@/components/legal/LegalPageShell";
 export const metadata: Metadata = {
   title: "Trust & Security | ChangeLatch",
   description: "How ChangeLatch handles software security, license protection, project safety, and user data.",
+  alternates: {
+    canonical: "/trust",
+  },
 };
 
 export default function TrustPage() {

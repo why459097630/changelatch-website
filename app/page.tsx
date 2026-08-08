@@ -121,6 +121,37 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-[#f8fafc] text-[#0f172a]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "ChangeLatch",
+            url: "https://www.thinkitdoneapp.com/",
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "ChangeLatch",
+            url: "https://www.thinkitdoneapp.com/",
+            applicationCategory: "DeveloperApplication",
+            operatingSystem: "Windows",
+            description:
+              "ChangeLatch is a local Windows tool for reviewing and safely applying AI-generated BEFORE/AFTER code patches.",
+            publisher: {
+              "@type": "Organization",
+              name: "Think It Done",
+            },
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <div className="fixed inset-0 -z-10 bg-[linear-gradient(135deg,#ffffff_0%,#f1f5f9_48%,#d7dde8_100%),radial-gradient(circle_at_top,rgba(99,102,241,0.18),transparent_38%)]" />
 
       <SiteHeader
@@ -136,9 +167,9 @@ export default function Home() {
             </div>
 
             <h1 className="mb-6 text-[38px] font-extrabold leading-[0.98] tracking-[-0.045em] sm:text-5xl md:mb-8 md:text-7xl md:leading-[0.96]">
-              AI-agent-like coding efficiency,
+              ChangeLatch
               <br />
-              <span className="text-[28px] text-[#0f172a]/60 sm:text-4xl md:text-6xl">without local agent setup</span>
+              <span className="text-[28px] text-[#0f172a]/60 sm:text-4xl md:text-6xl">AI-agent-like coding efficiency, without local agent setup</span>
             </h1>
 
             <p className="max-w-[600px] text-base leading-[1.8] text-[#475569] md:text-lg md:leading-[1.9]">

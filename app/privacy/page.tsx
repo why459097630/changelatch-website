@@ -4,6 +4,9 @@ import LegalPageShell from "@/components/legal/LegalPageShell";
 export const metadata: Metadata = {
   title: "Privacy Policy | ChangeLatch",
   description: "Privacy Policy for the ChangeLatch website and desktop software license service.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {

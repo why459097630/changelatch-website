@@ -4,6 +4,9 @@ import LegalPageShell from "@/components/legal/LegalPageShell";
 export const metadata: Metadata = {
   title: "Refund Policy | ChangeLatch",
   description: "Refund Policy for ChangeLatch software licenses and digital purchases.",
+  alternates: {
+    canonical: "/refund",
+  },
 };
 
 export default function RefundPage() {
