@@ -22,7 +22,7 @@ export default function TermsPage() {
             Service overview
           </h2>
           <p className="mt-3">
-            ChangeLatch is a desktop software tool designed to help developers apply AI-generated code patches through a controlled workflow with matching checks, review steps, backups, build verification, history records, and rollback capabilities.
+            ChangeLatch is a desktop tool for reviewing and applying AI-generated PATCH instructions. It supports precise code changes, guarded file operations, project verification, repair prompt generation, backups, rollback, and optional GitHub syncing.
           </p>
         </section>
 

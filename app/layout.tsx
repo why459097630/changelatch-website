@@ -5,9 +5,9 @@ import PageViewTracker from "@/components/analytics/PageViewTracker";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.thinkitdoneapp.com"),
-  title: "ChangeLatch – Review & Apply AI Code Patches Safely",
+  title: "ChangeLatch – Review, Apply & Verify AI Code Patches",
   description:
-    "ChangeLatch is a local Windows tool for reviewing and safely applying AI-generated BEFORE/AFTER code patches with exact matching, backups, build verification, and rollback.",
+    "Apply AI-generated PATCH changes locally with exact matching, diff review, project verification, backups, guarded rollback, and optional GitHub syncing.",
   applicationName: "ChangeLatch",
   creator: "Think It Done",
   publisher: "Think It Done",
@@ -18,15 +18,15 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "ChangeLatch",
-    title: "ChangeLatch – Review & Apply AI Code Patches Safely",
+    title: "ChangeLatch – Review, Apply & Verify AI Code Patches",
     description:
-      "Review AI-generated code patches before applying them locally with exact matching, backups, build verification, and rollback.",
+      "Review AI-generated code patches with exact matching, project checks, backups, guarded rollback, and optional GitHub syncing.",
   },
   twitter: {
     card: "summary",
-    title: "ChangeLatch – Review & Apply AI Code Patches Safely",
+    title: "ChangeLatch – Review, Apply & Verify AI Code Patches",
     description:
-      "Review and safely apply AI-generated BEFORE/AFTER code patches locally with ChangeLatch.",
+      "Review, apply, and verify AI-generated PATCH changes locally with ChangeLatch.",
   },
 };
 

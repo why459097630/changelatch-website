@@ -143,7 +143,7 @@ export default function Home() {
             applicationCategory: "DeveloperApplication",
             operatingSystem: "Windows",
             description:
-              "ChangeLatch is a local Windows tool for reviewing and safely applying AI-generated BEFORE/AFTER code patches.",
+              "ChangeLatch is a local Windows tool for reviewing and applying AI-generated PATCH changes with exact matching, project verification, and optional GitHub syncing.",
             publisher: {
               "@type": "Organization",
               name: "Think It Done",
@@ -169,15 +169,15 @@ export default function Home() {
             <h1 className="mb-6 text-[38px] font-extrabold leading-[0.98] tracking-[-0.045em] sm:text-5xl md:mb-8 md:text-7xl md:leading-[0.96]">
               ChangeLatch
               <br />
-              <span className="text-[28px] text-[#0f172a]/60 sm:text-4xl md:text-6xl">AI-agent-like coding efficiency, without local agent setup</span>
+              <span className="text-[28px] text-[#0f172a]/60 sm:text-4xl md:text-6xl">Review AI Code Changes. Apply with Control.</span>
             </h1>
 
             <p className="max-w-[600px] text-base leading-[1.8] text-[#475569] md:text-lg md:leading-[1.9]">
-              Generate precise PATCH instructions with web-based AI, then apply changes safely with exact matching, automatic backups, builds, and rollback.
+              Generate AI PATCH instructions using GitHub or an optional project ZIP. Review changes, apply them precisely, run verification, and optionally push updates to GitHub.
             </p>
 
             <p className="mt-4 max-w-[600px] text-sm leading-7 text-[#64748b] md:text-[15px]">
-              Built for hobbyists and professional developers who want an efficient AI coding workflow without maintaining a local agent or paying for a separate API.
+              Built for developers using web-based AI assistants who want precise code changes, local control, and no separate AI API setup.
             </p>
 
             <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
@@ -240,7 +240,7 @@ export default function Home() {
                       Patch
                     </div>
                     <div className="rounded-xl px-3 py-2.5 text-[11px] font-medium text-[#64748b]">
-                      Build
+                      Verify
                     </div>
                     <div className="rounded-xl bg-indigo-50 px-3 py-2.5 text-[11px] font-semibold text-indigo-600">
                       History
@@ -264,7 +264,7 @@ export default function Home() {
                       </h3>
                     </div>
                     <div className="rounded-full bg-emerald-50 px-3 py-1.5 text-[10px] font-semibold text-emerald-600">
-                      Build passed
+                      Checks passed
                     </div>
                   </div>
 
@@ -311,8 +311,8 @@ export default function Home() {
                         ✓
                       </div>
                       <div>
-                        <div className="text-[12px] font-semibold text-[#0f172a]">Automatic build passed</div>
-                        <div className="mt-0.5 text-[10px] text-[#94a3b8]">Changes verified successfully</div>
+                        <div className="text-[12px] font-semibold text-[#0f172a]">Verification checks passed</div>
+                        <div className="mt-0.5 text-[10px] text-[#94a3b8]">Applicable project checks passed</div>
                       </div>
                     </div>
 
@@ -322,7 +322,7 @@ export default function Home() {
                       </div>
                       <div>
                         <div className="text-[12px] font-semibold text-[#0f172a]">Rollback last patch available</div>
-                        <div className="mt-0.5 text-[10px] text-[#94a3b8]">Restore the previous state anytime</div>
+                        <div className="mt-0.5 text-[10px] text-[#94a3b8]">Rollback when safety checks allow</div>
                       </div>
                     </div>
                   </div>
@@ -346,7 +346,7 @@ export default function Home() {
 
               <div className="flex items-center justify-center gap-1.5 border-t border-slate-200/80 bg-slate-50/80 px-5 py-3 text-[10px] font-semibold text-emerald-600">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                12 changes applied · Build passed · Rollback available
+                12 changes applied · Checks passed · Rollback available
               </div>
             </div>
           </div>
@@ -363,7 +363,7 @@ export default function Home() {
             From AI-generated changes to safely applied code
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-[1.8] text-[#64748b] md:mt-6 md:text-[17px] md:leading-[1.9]">
-            Turn AI-generated code changes into structured PATCH workflows with precise matching and controlled replacements.
+            Turn AI-generated code changes into reviewable PATCH workflows with multi-file operations and project verification.
           </p>
         </div>
 
@@ -385,7 +385,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-4 text-[15px] leading-[1.85] text-[#64748b]">
-                Select your project folder, exclude unnecessary files, and prepare a project ZIP for AI analysis.
+                Select your project and prepare AI code context using GitHub or an optional ZIP package.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
@@ -396,7 +396,7 @@ export default function Home() {
                   Smart exclude
                 </span>
                 <span className="rounded-full border border-indigo-100 bg-white/82 px-3 py-1.5 text-xs font-semibold text-indigo-500">
-                  ZIP package
+                  GitHub / ZIP
                 </span>
               </div>
             </div>
@@ -419,7 +419,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-4 text-[15px] leading-[1.85] text-[#64748b]">
-                Generate a dedicated prompt and send it with your project ZIP, so AI can create PATCH changes based on your real project.
+                Generate structured AI prompts with your code source, change requirements, and customizable engineering rules.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
@@ -427,7 +427,7 @@ export default function Home() {
                   AI prompt
                 </span>
                 <span className="rounded-full border border-sky-100 bg-white/82 px-3 py-1.5 text-xs font-semibold text-sky-500">
-                  Project ZIP
+                  Engineering rules
                 </span>
                 <span className="rounded-full border border-sky-100 bg-white/82 px-3 py-1.5 text-xs font-semibold text-sky-500">
                   PATCH generation
@@ -453,7 +453,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-4 text-[15px] leading-[1.85] text-[#64748b]">
-                Paste the AI-generated PATCH, instantly match and replace code, then verify the result.
+                Review exact matches and diffs, apply selected code or file changes, and run project verification.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
@@ -461,10 +461,10 @@ export default function Home() {
                   Exact match
                 </span>
                 <span className="rounded-full border border-fuchsia-100 bg-white/82 px-3 py-1.5 text-xs font-semibold text-fuchsia-500">
-                  One-click replace
+                  Selective apply
                 </span>
                 <span className="rounded-full border border-fuchsia-100 bg-white/82 px-3 py-1.5 text-xs font-semibold text-fuchsia-500">
-                  Build check
+                  Project verification
                 </span>
               </div>
             </div>
@@ -481,7 +481,7 @@ export default function Home() {
             See how AI coding workflows compare
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-[1.8] text-[#64748b] md:mt-6 md:text-[17px] md:leading-[1.9]">
-            Compare manual editing, AI agents, and ChangeLatch across speed, safety, accuracy, cost, and setup requirements.
+            Compare typical manual editing, autonomous-agent workflows, and ChangeLatch. Features and setup requirements vary by tool.
           </p>
         </div>
 
@@ -528,7 +528,7 @@ export default function Home() {
 
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Faster AI code modifications
+                    Automated multi-file editing
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="text-[25px] font-black leading-none text-rose-500">
@@ -549,7 +549,7 @@ export default function Home() {
 
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Prevent AI unintended code changes
+                    User-approved code changes
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -570,7 +570,7 @@ export default function Home() {
 
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Reduce AI understanding errors
+                    Exact-match checks before applying
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="text-[25px] font-black leading-none text-rose-500">
@@ -591,7 +591,7 @@ export default function Home() {
 
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Reduce Token consumption
+                    Web AI without a separate API key
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -612,7 +612,7 @@ export default function Home() {
 
                 <tr>
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    No local AI development environment setup required
+                    No local coding agent setup required
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -643,14 +643,14 @@ export default function Home() {
             A safer workflow for AI-assisted coding
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-[1.8] text-[#64748b] md:mt-6 md:text-[17px] md:leading-[1.9]">
-            Send your project ZIP to AI, receive precise PATCH instructions, and apply verified changes without giving AI direct control of your codebase.
+            Use GitHub or an optional ZIP to provide code context to AI, receive structured PATCH instructions, and review, apply, and verify changes locally.
           </p>
         </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <div className="rounded-full border border-indigo-200/60 bg-indigo-50/60 px-3 py-1.5 text-sm font-medium text-indigo-600">ChatGPT Workflow</div>
           <div className="rounded-full border border-indigo-200/60 bg-indigo-50/60 px-3 py-1.5 text-sm font-medium text-indigo-600">Claude Workflow</div>
-          <div className="rounded-full border border-indigo-200/60 bg-indigo-50/60 px-3 py-1.5 text-sm font-medium text-indigo-600">ZIP → PATCH</div>
+          <div className="rounded-full border border-indigo-200/60 bg-indigo-50/60 px-3 py-1.5 text-sm font-medium text-indigo-600">GitHub / ZIP → PATCH</div>
           <div className="rounded-full border border-indigo-200/60 bg-indigo-50/60 px-3 py-1.5 text-sm font-medium text-indigo-600">Safe Code Changes</div>
           <div className="rounded-full border border-indigo-200/60 bg-indigo-50/60 px-3 py-1.5 text-sm font-medium text-indigo-600">Large Projects</div>
         </div>
@@ -673,9 +673,9 @@ export default function Home() {
               <Wand2 className="h-5 w-5" />
             </div>
             <div className="relative z-10 mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-indigo-400">Efficiency</div>
-            <h3 className="relative z-10 mb-3 text-xl font-semibold tracking-tight text-[#0f172a]">Apply code changes instantly</h3>
+            <h3 className="relative z-10 mb-3 text-xl font-semibold tracking-tight text-[#0f172a]">Apply multi-file PATCH changes</h3>
             <p className="relative z-10 mb-5 text-[17px] leading-[1.85] text-[#475569]">
-              Replace multi-file AI changes in seconds without manually searching, copying, and editing code.
+              Apply selected code changes across files, including creating, deleting, moving, and renaming files through PATCH instructions.
             </p>
             <div className="relative z-10 text-sm text-[#94a3b8]">Reduce repetitive work and speed up your development workflow.</div>
           </div>
@@ -686,9 +686,9 @@ export default function Home() {
               <Sparkles className="h-5 w-5" />
             </div>
             <div className="relative z-10 mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-indigo-400">Security</div>
-            <h3 className="relative z-10 mb-3 text-xl font-semibold tracking-tight text-[#0f172a]">Modify projects with confidence</h3>
+            <h3 className="relative z-10 mb-3 text-xl font-semibold tracking-tight text-[#0f172a]">Review, verify, and recover</h3>
             <p className="relative z-10 mb-5 text-[17px] leading-[1.85] text-[#475569]">
-              Review exact changes, create backups, and prevent unwanted AI edits.
+              Review diffs and risk indicators, run project checks, and keep backups for guarded rollback.
             </p>
             <div className="relative z-10 text-sm text-[#94a3b8]">Keep your project safe with controlled and verifiable changes.</div>
           </div>
@@ -698,12 +698,12 @@ export default function Home() {
             <div className="relative z-10 mb-8 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6172d6] to-[#7c88e8] text-white shadow-[0_10px_22px_rgba(99,102,241,0.13)]">
               <Download className="h-5 w-5" />
             </div>
-            <div className="relative z-10 mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-indigo-400">Lower AI Costs</div>
-            <h3 className="relative z-10 mb-3 text-xl font-semibold tracking-tight text-[#0f172a]">Reduce AI agent and token costs</h3>
+            <div className="relative z-10 mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-indigo-400">Flexible Workflow</div>
+            <h3 className="relative z-10 mb-3 text-xl font-semibold tracking-tight text-[#0f172a]">Work with AI without local agents</h3>
             <p className="relative z-10 mb-5 text-[17px] leading-[1.85] text-[#475569]">
-              Use ZIP + PATCH with web-based AI instead of keeping an AI agent running and repeatedly syncing your entire project.
+              Use GitHub or an optional ZIP to work with web-based AI without configuring a local coding agent.
             </p>
-            <div className="relative z-10 text-sm text-[#94a3b8]">Less context usage · No local setup · Lower AI costs.</div>
+            <div className="relative z-10 text-sm text-[#94a3b8]">GitHub or ZIP · No local coding agent · No separate AI API.</div>
           </div>
         </div>
       </section>
@@ -730,7 +730,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              ChangeLatch helps developers safely apply AI-generated code changes. AI creates the changes, and ChangeLatch precisely matches, applies, backs up, and verifies those changes.
+              ChangeLatch is a local Windows tool for reviewing and applying AI-generated PATCH changes. It supports multi-file operations, exact-match review, backups, project verification, repair prompts, and optional GitHub syncing.
             </p>
           </div>
 
@@ -772,16 +772,16 @@ export default function Home() {
             <div className="mb-4 flex items-start justify-between gap-4">
               <div>
                 <div className="mb-2 inline-flex rounded-full border border-indigo-200/55 bg-indigo-50/70 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.16em] text-indigo-500">
-                  ZIP Analysis
+                  GitHub / ZIP
                 </div>
-                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">AI cannot read ZIP files?</h3>
+                <h3 className="text-[20px] font-semibold leading-[1.18] tracking-[-0.03em] text-[#0f172a] md:text-[30px] md:leading-[1.12]">Can I use GitHub instead of a project ZIP?</h3>
               </div>
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#6172d6] to-[#7c88e8] text-white shadow-[0_8px_18px_rgba(99,102,241,0.11)]">
                 <HelpCircle className="h-5 w-5" />
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              ChangeLatch generates a ZIP project package that needs to be analyzed by an AI tool to understand your project structure and generate a PATCH. Some AI platforms do not support direct ZIP file analysis. Please use an AI tool that supports project file analysis (such as ChatGPT, Claude, etc.).
+              Yes. ChangeLatch can include a GitHub repository and branch in AI prompts, or prepare an optional project ZIP. Your AI service must be able to access the selected code source.
             </p>
           </div>
 
@@ -798,7 +798,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              No. ChangeLatch helps reduce unnecessary AI usage by avoiding repeated project syncing and large context transfers during code changes.
+              ChangeLatch does not require a separate AI API key. You can use web-based AI assistants, while any AI service usage costs depend on your chosen provider and plan.
             </p>
           </div>
 
@@ -815,7 +815,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              Yes. ChangeLatch uses exact matching, backups, and controlled replacements to keep AI code changes safe and under your control.
+              ChangeLatch provides exact matching, change review, risk checks, backups, verification, and guarded rollback. Users remain in control of which changes to apply.
             </p>
           </div>
 
@@ -832,7 +832,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              ChangeLatch delivers AI-agent-like efficiency through a web-based AI + ZIP + PATCH workflow—without local agent setup or separate API costs.
+              ChangeLatch complements AI assistants rather than replacing them. It focuses on reviewing, applying, verifying, and optionally syncing AI-generated changes without requiring a local coding agent.
             </p>
 
           </div>
@@ -848,7 +848,7 @@ export default function Home() {
             Built for safer, controlled code changes
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-[1.8] text-[#64748b] md:mt-6 md:text-[17px] md:leading-[1.9]">
-            ChangeLatch keeps every applied change exact, reviewable, backed up, verified, and reversible.
+            ChangeLatch provides change review, backups, project verification, and guarded rollback for supported PATCH operations.
           </p>
         </div>
 
@@ -858,10 +858,10 @@ export default function Home() {
               Exact matching
             </div>
             <h3 className="text-xl font-semibold tracking-[-0.03em] text-[#0f172a]">
-              Only matched changes are applied
+              Changes are checked before application
             </h3>
             <p className="mt-3 text-sm leading-7 text-[#64748b]">
-              ChangeLatch checks each PATCH against the current project files and alerts you when the original code cannot be matched exactly.
+              ChangeLatch checks exact code replacements and applies safety checks to file operations before changes are made.
             </p>
           </div>
 
@@ -870,10 +870,10 @@ export default function Home() {
               Review &amp; control
             </div>
             <h3 className="text-xl font-semibold tracking-[-0.03em] text-[#0f172a]">
-              You choose what gets applied
+              Review diffs and select changes
             </h3>
             <p className="mt-3 text-sm leading-7 text-[#64748b]">
-              Parsed PATCH changes remain reviewable and selectable before you apply them to the project.
+              Review code differences and risk indicators, then choose which eligible PATCH changes to apply.
             </p>
           </div>
 
@@ -882,10 +882,10 @@ export default function Home() {
               Protection
             </div>
             <h3 className="text-xl font-semibold tracking-[-0.03em] text-[#0f172a]">
-              Backup, build verification, and rollback
+              Backups, project verification, and guarded rollback
             </h3>
             <p className="mt-3 text-sm leading-7 text-[#64748b]">
-              Applied changes are recorded in history, protected with backups, automatically build-checked, and available for rollback.
+              Applied changes are recorded in PATCH history, supported project checks can run after application, and rollback is available when safety checks permit.
             </p>
           </div>
         </div>
@@ -896,10 +896,10 @@ export default function Home() {
         <div className="px-0 py-8 text-center md:px-12 md:py-12">
           <div className="mb-3 text-center text-sm font-semibold tracking-[0.14em] text-indigo-400">Ready to start?</div>
           <h2 className="mt-3 text-center text-[34px] font-extrabold leading-[1.06] tracking-[-0.045em] text-[#0f172a] sm:text-4xl md:text-[54px] md:leading-[1.04]">
-            Bring AI-agent-like efficiency to your coding workflow
+            Make AI changes easier to review, apply, and verify
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-center text-base leading-[1.8] text-[#64748b] md:mt-6 md:text-[17px] md:leading-[1.9]">
-            Use web-based AI with ChangeLatch to apply code changes safely—without local agent setup or a separate API.
+            Use your preferred web-based AI with ChangeLatch to review and apply PATCH changes without a local coding agent or separate AI API key.
           </p>
           <div className="mt-8 flex justify-center">
             <button

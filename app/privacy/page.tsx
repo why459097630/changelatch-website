@@ -49,10 +49,10 @@ export default function PrivacyPage() {
             Project files and source code
           </h2>
           <p className="mt-3">
-            ChangeLatch processes project files locally on your device. We do not upload, store, or access your source code through our servers as part of the code patching workflow.
+            ChangeLatch processes project files locally on your device. The local PATCH workflow does not upload source code to ChangeLatch servers. If you enable GitHub syncing, committed changes are pushed to your configured GitHub remote.
           </p>
           <p className="mt-3">
-            Users may choose to provide project files directly to external AI services such as ChatGPT or Claude according to their own usage decisions and the policies of those services.
+            Users may provide project files, ZIP packages, or accessible GitHub repository links to external AI services such as ChatGPT or Claude. Data shared with these services is subject to their respective policies.
           </p>
         </section>
 

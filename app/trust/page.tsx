@@ -14,7 +14,7 @@ export default function TrustPage() {
     <LegalPageShell
       badge="Trust"
       title="Trust & Security"
-      description="ChangeLatch is designed to help developers apply AI-generated code changes through a controlled workflow with safety checks, backups, and rollback support."
+      description="ChangeLatch helps developers review and apply AI-generated PATCH changes with matching checks, file-operation safeguards, project verification, backups, and guarded rollback."
     >
       <div className="space-y-8 text-[15px] leading-[1.85] text-[#475569]">
         <section>
@@ -22,7 +22,7 @@ export default function TrustPage() {
             Controlled code change workflow
           </h2>
           <p className="mt-3">
-            ChangeLatch applies AI-generated PATCH instructions through a structured workflow. Changes are matched against project files before replacement, helping prevent unintended modifications.
+            ChangeLatch processes AI-generated PATCH instructions through structured review and validation. It supports exact-match replacements and guarded file operations, helping reduce unintended modifications.
           </p>
           <p className="mt-3">
             ChangeLatch does not automatically rewrite your project or make independent coding decisions. Users review and apply generated PATCH changes through the application workflow.
@@ -34,7 +34,7 @@ export default function TrustPage() {
             Project safety
           </h2>
           <p className="mt-3">
-            Before applying changes, ChangeLatch creates backups and keeps change history records so users can review previous states and restore earlier versions when needed.
+            ChangeLatch maintains backups and PATCH history, provides project verification, and supports rollback of the latest eligible PATCH subject to safety checks.
           </p>
           <p className="mt-3">
             Users remain responsible for reviewing AI-generated changes and maintaining appropriate backups of their own projects.
@@ -55,7 +55,7 @@ export default function TrustPage() {
             Data handling
           </h2>
           <p className="mt-3">
-            ChangeLatch is designed as a local desktop workflow tool. Project files are processed according to the application's workflow and are not used to train AI models.
+            ChangeLatch processes PATCH operations locally and does not train AI models on project files. Optional GitHub syncing sends committed changes to the user's configured GitHub remote.
           </p>
           <p className="mt-3">
             Payment and account-related information may be handled by third-party service providers required for licensing and payment processing.

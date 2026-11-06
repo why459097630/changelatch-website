@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 export const metadata: Metadata = {
   title: "Pricing | ChangeLatch",
   description:
-    "Get a ChangeLatch personal license for reviewing and safely applying AI-generated BEFORE/AFTER code patches locally.",
+    "Get a ChangeLatch personal license to review, apply, and verify AI-generated PATCH changes with optional GitHub syncing.",
   alternates: {
     canonical: "/pricing",
   },

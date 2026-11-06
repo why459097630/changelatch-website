@@ -564,7 +564,7 @@ useEffect(() => {
           <div className="text-left sm:text-center">
             <h1 className="text-[34px] font-extrabold leading-[1.04] tracking-[-0.05em] sm:text-5xl md:text-6xl">Get ChangeLatch</h1>
             <p className="mt-4 text-sm leading-7 text-[#64748b] md:text-base">
-              Purchase ChangeLatch and safely apply AI-generated code changes with precise PATCH workflows.
+              Purchase ChangeLatch to review, apply, and verify AI-generated PATCH changes with local control.
             </p>
           </div>
         </section>
@@ -581,7 +581,7 @@ useEffect(() => {
         <div className="mb-8 text-left sm:text-center md:mb-10">
           <h1 className="text-[34px] font-extrabold leading-[1.04] tracking-[-0.05em] sm:text-5xl md:text-6xl">Get ChangeLatch</h1>
           <p className="mt-4 text-sm leading-7 text-[#64748b] md:text-base">
-            Purchase ChangeLatch and apply AI-generated code changes faster, safer, and with full control.
+            Purchase ChangeLatch to review and apply AI-generated PATCH changes with optional GitHub syncing.
           </p>
         </div>
 
@@ -608,7 +608,7 @@ useEffect(() => {
                           Prepare your project
                         </div>
                         <div className="mt-2 text-[13px] leading-6 text-slate-500">
-                          Select your project in ChangeLatch, then generate the prompt and ZIP package.
+                          Select your project and prepare GitHub or ZIP code context for AI.
                         </div>
                       </div>
 
@@ -620,7 +620,7 @@ useEffect(() => {
                           Generate a PATCH
                         </div>
                         <div className="mt-2 text-[13px] leading-6 text-slate-500">
-                          Send the prompt and ZIP package to web AI to generate precise code changes.
+                          Send the structured prompt and accessible code source to your preferred AI to generate a PATCH.
                         </div>
                       </div>
 
@@ -632,7 +632,7 @@ useEffect(() => {
                           Apply safely
                         </div>
                         <div className="mt-2 text-[13px] leading-6 text-slate-500">
-                          Paste the PATCH into ChangeLatch, verify the matches, and apply the changes.
+                          Review exact matches and diffs, apply selected changes, and run project verification.
                         </div>
                       </div>
                     </div>
@@ -656,7 +656,7 @@ useEffect(() => {
                       </h2>
 
                       <p className="mt-2 max-w-xl text-[13px] leading-6 text-slate-500">
-                        Download ChangeLatch and try the AI ZIP-to-PATCH workflow before purchasing a license.
+                        Download ChangeLatch and try up to 5 PATCH applications before purchasing a license.
                       </p>
 
                       <div className="mt-4 space-y-2.5">
@@ -667,7 +667,7 @@ useEffect(() => {
 
                         <div className="flex items-center gap-2.5 text-[13px] font-medium text-slate-700">
                           <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500" />
-                          <span>Try the core PATCH workflow</span>
+                          <span>5 free PATCH applications</span>
                         </div>
 
                         <div className="flex items-center gap-2.5 text-[13px] font-medium text-slate-700">
@@ -700,32 +700,32 @@ useEffect(() => {
                     <div className="flex items-center gap-2 rounded-[18px] border border-slate-200/70 bg-white/80 px-3 py-3 shadow-[0_12px_28px_rgba(15,23,42,0.04)] backdrop-blur-xl md:gap-3 md:rounded-[22px] md:px-4 md:py-4">
                       <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500" />
                       <div>
-                        <div className="text-sm font-semibold text-[#0f172a]">Multi-file changes</div>
-                        <div className="mt-0.5 text-xs leading-5 text-slate-500">Apply one PATCH across multiple project files.</div>
+                        <div className="text-sm font-semibold text-[#0f172a]">Multi-file PATCH</div>
+                        <div className="mt-0.5 text-xs leading-5 text-slate-500">Apply selected code changes and create, delete, move, or rename files through structured PATCH instructions.</div>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-2 rounded-[18px] border border-slate-200/70 bg-white/80 px-3 py-3 shadow-[0_12px_28px_rgba(15,23,42,0.04)] backdrop-blur-xl md:gap-3 md:rounded-[22px] md:px-4 md:py-4">
                       <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500" />
                       <div>
-                        <div className="text-sm font-semibold text-[#0f172a]">Exact matching</div>
-                        <div className="mt-0.5 text-xs leading-5 text-slate-500">Apply changes only when the original code matches exactly.</div>
+                        <div className="text-sm font-semibold text-[#0f172a]">Exact matching & review</div>
+                        <div className="mt-0.5 text-xs leading-5 text-slate-500">Review exact matches, code diffs, and change risks before applying a PATCH.</div>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-2 rounded-[18px] border border-slate-200/70 bg-white/80 px-3 py-3 shadow-[0_12px_28px_rgba(15,23,42,0.04)] backdrop-blur-xl md:gap-3 md:rounded-[22px] md:px-4 md:py-4">
                       <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500" />
                       <div>
-                        <div className="text-sm font-semibold text-[#0f172a]">Automatic backups</div>
-                        <div className="mt-0.5 text-xs leading-5 text-slate-500">Create a backup before applying each PATCH.</div>
+                        <div className="text-sm font-semibold text-[#0f172a]">GitHub & ZIP workflow</div>
+                        <div className="mt-0.5 text-xs leading-5 text-slate-500">Prepare AI prompts using GitHub or an optional ZIP, with optional GitHub push after applying changes.</div>
                       </div>
                     </div>
 
                     <div className="flex items-center gap-2 rounded-[18px] border border-slate-200/70 bg-white/80 px-3 py-3 shadow-[0_12px_28px_rgba(15,23,42,0.04)] backdrop-blur-xl md:gap-3 md:rounded-[22px] md:px-4 md:py-4">
                       <CheckCircle2 className="h-4 w-4 shrink-0 text-emerald-500" />
                       <div>
-                        <div className="text-sm font-semibold text-[#0f172a]">Build verification</div>
-                        <div className="mt-0.5 text-xs leading-5 text-slate-500">Automatically run the project build after applying changes.</div>
+                        <div className="text-sm font-semibold text-[#0f172a]">Verification & recovery</div>
+                        <div className="mt-0.5 text-xs leading-5 text-slate-500">Run available project checks, generate focused AI repair prompts, and use backups with guarded rollback.</div>
                       </div>
                     </div>
                   </div>
