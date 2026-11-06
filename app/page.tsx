@@ -169,15 +169,15 @@ export default function Home() {
             <h1 className="mb-6 text-[38px] font-extrabold leading-[0.98] tracking-[-0.045em] sm:text-5xl md:mb-8 md:text-7xl md:leading-[0.96]">
               ChangeLatch
               <br />
-              <span className="text-[28px] text-[#0f172a]/60 sm:text-4xl md:text-6xl">Review AI Code Changes. Apply with Control.</span>
+              <span className="text-[28px] text-[#0f172a]/60 sm:text-4xl md:text-6xl">Apply AI-Generated Code Changes Without Manual Editing</span>
             </h1>
 
             <p className="max-w-[600px] text-base leading-[1.8] text-[#475569] md:text-lg md:leading-[1.9]">
-              Generate AI PATCH instructions using GitHub or an optional project ZIP. Review changes, apply them precisely, run verification, and optionally push updates to GitHub.
+              Use GitHub or a project ZIP to give AI your code context. Get a PATCH from ChatGPT or Claude, paste it into ChangeLatch, then review, apply, and verify the changes locally. GitHub syncing is optional.
             </p>
 
             <p className="mt-4 max-w-[600px] text-sm leading-7 text-[#64748b] md:text-[15px]">
-              Built for developers using web-based AI assistants who want precise code changes, local control, and no separate AI API setup.
+              Skip copying AI-generated changes into files one by one. ChangeLatch checks exact matches and lets you choose what to apply, without a separate AI API setup.
             </p>
 
             <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:gap-4">
@@ -653,7 +653,7 @@ export default function Home() {
       <section id="how-it-works" className="order-1 scroll-mt-28 mx-auto max-w-7xl px-5 py-14 sm:px-6 md:py-20">
         <div className="mb-9 md:mb-12">
           <div className="mb-3 text-center text-sm font-semibold tracking-[0.14em] text-indigo-400">Why ChangeLatch</div>
-          <h2 className="text-center text-[34px] font-extrabold leading-[1.06] tracking-[-0.045em] text-[#0f172a] sm:text-4xl md:text-[54px] md:leading-[1.04]">Make AI-assisted development faster, safer, and more cost-effective</h2>
+          <h2 className="text-center text-[34px] font-extrabold leading-[1.06] tracking-[-0.045em] text-[#0f172a] sm:text-4xl md:text-[54px] md:leading-[1.04]">Stop Replacing AI-Generated Code File by File</h2>
           <div className="mt-6 h-px w-10 bg-gradient-to-r from-indigo-300/22 via-indigo-200/16 to-transparent" />
         </div>
 
@@ -669,7 +669,7 @@ export default function Home() {
             <p className="relative z-10 mb-5 text-[17px] leading-[1.85] text-[#475569]">
               Apply selected code changes across files, including creating, deleting, moving, and renaming files through PATCH instructions.
             </p>
-            <div className="relative z-10 text-sm text-[#94a3b8]">Reduce repetitive work and speed up your development workflow.</div>
+            <div className="relative z-10 text-sm text-[#94a3b8]">Reduce manual copying and replacing when AI suggests changes to multiple files.</div>
           </div>
 
           <div className="group relative overflow-hidden rounded-[28px] border border-white/40 bg-white/50 p-6 shadow-[0_14px_40px_rgba(15,23,42,0.05)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1.5 hover:border-indigo-200/60 hover:shadow-[0_20px_48px_rgba(99,102,241,0.07)]">
