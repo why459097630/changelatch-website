@@ -497,7 +497,7 @@ export default function Home() {
                     Chat AI + Manual Editing
                   </th>
                   <th className="px-5 py-4 text-center text-[13px] font-extrabold tracking-[-0.01em] text-[#0f172a]">
-                    AI agent
+                    Local AI Coding Agent
                   </th>
                   <th className="px-5 py-4 text-center text-[13px] font-extrabold tracking-[-0.01em] text-[#0f172a]">
                     ChangeLatch
@@ -507,7 +507,7 @@ export default function Home() {
               <tbody>
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    One-click multi-file changes
+                    No manual code copy-paste
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="text-[25px] font-black leading-none text-rose-500">
@@ -528,7 +528,7 @@ export default function Home() {
 
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Automated multi-file editing
+                    Multi-file code changes
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="text-[25px] font-black leading-none text-rose-500">
@@ -549,26 +549,12 @@ export default function Home() {
 
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    User-approved code changes
+                    No local coding agent required
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
                       ✓
                     </span>
-                  </td>
-                  <td className="px-5 py-4 text-center">
-                    <span className="text-xs font-semibold text-slate-500">Varies</span>
-                  </td>
-                  <td className="px-5 py-4 text-center">
-                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
-                      ✓
-                    </span>
-                  </td>
-                </tr>
-
-                <tr className="border-b border-slate-100/90">
-                  <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Exact-match checks before applying
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="text-[25px] font-black leading-none text-rose-500">
@@ -576,7 +562,25 @@ export default function Home() {
                     </span>
                   </td>
                   <td className="px-5 py-4 text-center">
-                    <span className="text-xs font-semibold text-slate-500">Varies</span>
+                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
+                      ✓
+                    </span>
+                  </td>
+                </tr>
+
+                <tr className="border-b border-slate-100/90">
+                  <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
+                    Dedicated external PATCH workflow
+                  </td>
+                  <td className="px-5 py-4 text-center">
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
+                    </span>
+                  </td>
+                  <td className="px-5 py-4 text-center">
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
+                    </span>
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -587,7 +591,33 @@ export default function Home() {
 
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Web AI without a separate API key
+                    Exact-match PATCH validation
+                  </td>
+                  <td className="px-5 py-4 text-center">
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
+                    </span>
+                  </td>
+                  <td className="px-5 py-4 text-center">
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
+                    </span>
+                  </td>
+                  <td className="px-5 py-4 text-center">
+                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
+                      ✓
+                    </span>
+                  </td>
+                </tr>
+
+                <tr className="border-b border-slate-100/90">
+                  <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
+                    Built-in project verification
+                  </td>
+                  <td className="px-5 py-4 text-center">
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
+                    </span>
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -595,7 +625,25 @@ export default function Home() {
                     </span>
                   </td>
                   <td className="px-5 py-4 text-center">
-                    <span className="text-xs font-semibold text-slate-500">Varies</span>
+                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
+                      ✓
+                    </span>
+                  </td>
+                </tr>
+
+                <tr className="border-b border-slate-100/90">
+                  <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
+                    Automated PATCH application without additional AI calls
+                  </td>
+                  <td className="px-5 py-4 text-center">
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
+                    </span>
+                  </td>
+                  <td className="px-5 py-4 text-center">
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
+                    </span>
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -606,15 +654,17 @@ export default function Home() {
 
                 <tr>
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    No local coding agent setup required
+                    Built-in PATCH History & Guarded Rollback
                   </td>
                   <td className="px-5 py-4 text-center">
-                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
-                      ✓
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
                     </span>
                   </td>
                   <td className="px-5 py-4 text-center">
-                    <span className="text-xs font-semibold text-slate-500">Varies</span>
+                    <span className="text-[25px] font-black leading-none text-rose-500">
+                      ×
+                    </span>
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -626,6 +676,9 @@ export default function Home() {
             </table>
           </div>
         </div>
+        <p className="mx-auto mt-4 max-w-3xl text-center text-xs leading-5 text-[#64748b]">
+          Comparison reflects typical workflows; individual agent features may vary. Generating or repairing code with external AI uses your chosen provider&apos;s allowance. ChangeLatch applies PATCH changes locally without extra AI model calls, and rollback is subject to safety checks.
+        </p>
       </section>
 
       <section className="order-4 mx-auto max-w-5xl px-5 py-12 sm:px-6 md:py-14">
