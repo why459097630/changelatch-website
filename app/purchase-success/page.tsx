@@ -173,7 +173,7 @@ export default function ResultPage() {
         {!loading && hasError ? (
           <div className="mt-8 text-center">
             <p className="text-sm font-medium leading-6 text-slate-600">
-              Your license has not been created yet.
+              We could not confirm your license details.
             </p>
 
             <div className="mx-auto mt-6 max-w-xl text-sm leading-6 text-slate-600">

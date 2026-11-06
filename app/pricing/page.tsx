@@ -786,7 +786,7 @@ useEffect(() => {
                             <div className="text-[21px] font-extrabold leading-none tracking-[-0.03em] text-[#0f172a] md:text-[23px]">{option.priceLabel}</div>
                             {isBestValue ? (
                               <div className="inline-flex items-center rounded-full border border-fuchsia-200 bg-fuchsia-50 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-fuchsia-600">
-                                Best value
+                                Personal License
                               </div>
                             ) : null}
                           </div>
@@ -930,7 +930,7 @@ useEffect(() => {
                   .
                 </div>
                 <div>
-                  License purchases are non-refundable after activation.
+                  Refunds are subject to our Refund Policy.
                 </div>
               </div>
 

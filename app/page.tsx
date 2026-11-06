@@ -557,9 +557,7 @@ export default function Home() {
                     </span>
                   </td>
                   <td className="px-5 py-4 text-center">
-                    <span className="text-[25px] font-black leading-none text-rose-500">
-                      ×
-                    </span>
+                    <span className="text-xs font-semibold text-slate-500">Varies</span>
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -578,9 +576,7 @@ export default function Home() {
                     </span>
                   </td>
                   <td className="px-5 py-4 text-center">
-                    <span className="text-[25px] font-black leading-none text-rose-500">
-                      ×
-                    </span>
+                    <span className="text-xs font-semibold text-slate-500">Varies</span>
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -599,9 +595,7 @@ export default function Home() {
                     </span>
                   </td>
                   <td className="px-5 py-4 text-center">
-                    <span className="text-[25px] font-black leading-none text-rose-500">
-                      ×
-                    </span>
+                    <span className="text-xs font-semibold text-slate-500">Varies</span>
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
@@ -620,9 +614,7 @@ export default function Home() {
                     </span>
                   </td>
                   <td className="px-5 py-4 text-center">
-                    <span className="text-[25px] font-black leading-none text-rose-500">
-                      ×
-                    </span>
+                    <span className="text-xs font-semibold text-slate-500">Varies</span>
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
