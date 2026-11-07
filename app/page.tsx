@@ -507,7 +507,7 @@ export default function Home() {
               <tbody>
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    No manual code copy-paste
+                    No manual code replacement
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="text-[25px] font-black leading-none text-rose-500">
@@ -554,48 +554,6 @@ export default function Home() {
                   <td className="px-5 py-4 text-center">
                     <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
                       ✓
-                    </span>
-                  </td>
-                  <td className="px-5 py-4 text-center">
-                    <span className="text-[25px] font-black leading-none text-rose-500">
-                      ×
-                    </span>
-                  </td>
-                  <td className="px-5 py-4 text-center">
-                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
-                      ✓
-                    </span>
-                  </td>
-                </tr>
-
-                <tr className="border-b border-slate-100/90">
-                  <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Dedicated external PATCH workflow
-                  </td>
-                  <td className="px-5 py-4 text-center">
-                    <span className="text-[25px] font-black leading-none text-rose-500">
-                      ×
-                    </span>
-                  </td>
-                  <td className="px-5 py-4 text-center">
-                    <span className="text-[25px] font-black leading-none text-rose-500">
-                      ×
-                    </span>
-                  </td>
-                  <td className="px-5 py-4 text-center">
-                    <span className="inline-flex h-5 w-5 items-center justify-center rounded-md bg-emerald-500 text-[13px] font-black leading-none text-white">
-                      ✓
-                    </span>
-                  </td>
-                </tr>
-
-                <tr className="border-b border-slate-100/90">
-                  <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Exact-match PATCH validation
-                  </td>
-                  <td className="px-5 py-4 text-center">
-                    <span className="text-[25px] font-black leading-none text-rose-500">
-                      ×
                     </span>
                   </td>
                   <td className="px-5 py-4 text-center">
