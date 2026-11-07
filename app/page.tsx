@@ -528,7 +528,7 @@ export default function Home() {
 
                 <tr className="border-b border-slate-100/90">
                   <td className="px-5 py-4 text-[14px] font-bold tracking-[-0.015em] text-[#0f172a]">
-                    Multi-file code changes
+                    Fast Multi-file Code Updates
                   </td>
                   <td className="px-5 py-4 text-center">
                     <span className="text-[25px] font-black leading-none text-rose-500">
