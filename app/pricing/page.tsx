@@ -685,7 +685,7 @@ useEffect(() => {
                       </a>
 
                       <p className="mt-3 text-[12px] font-medium text-slate-400">
-                      Windows 10/11 · Desktop App · v1.0.0
+                      Windows 10/11 · Desktop App · v2.0.0
                       </p>
                     </div>
                   </div>
