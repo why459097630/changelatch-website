@@ -173,7 +173,7 @@ export default function Home() {
             </h1>
 
             <p className="max-w-[600px] text-base leading-[1.8] text-[#475569] md:text-lg md:leading-[1.9]">
-              Use GitHub or a project ZIP to give AI your code context. Get a PATCH from ChatGPT or Claude, paste it into ChangeLatch, then review, apply, and verify the changes locally. GitHub syncing is optional.
+              Choose an AI assistant that can access your GitHub repository or analyze a project ZIP. Ask it to read your code and generate a PATCH, then paste the PATCH into ChangeLatch to review, apply, and verify changes locally.
             </p>
 
             <p className="mt-4 max-w-[600px] text-sm leading-7 text-[#64748b] md:text-[15px]">
@@ -385,7 +385,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-4 text-[15px] leading-[1.85] text-[#64748b]">
-                Select your project and prepare AI code context using GitHub or an optional ZIP package.
+                Use a GitHub repository your AI assistant can access, or prepare a project ZIP for an AI that supports ZIP analysis. Authorize repository access when required.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
@@ -419,7 +419,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-4 text-[15px] leading-[1.85] text-[#64748b]">
-                Generate structured AI prompts with your code source, change requirements, and customizable engineering rules.
+                Before each round, ask your AI assistant to read the latest relevant source files and generate a PATCH based on the current code using ChangeLatch's structured prompt.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
@@ -453,7 +453,7 @@ export default function Home() {
               </h3>
 
               <p className="mt-4 text-[15px] leading-[1.85] text-[#64748b]">
-                Review exact matches and diffs, apply selected code or file changes, and run project verification.
+                Paste the PATCH into ChangeLatch, review the differences, and apply selected changes locally. Run project checks and optionally enable automatic GitHub pushing.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-2">
@@ -784,7 +784,11 @@ export default function Home() {
               </div>
             </div>
             <p className="text-[17px] leading-[1.85] text-[#475569]">
-              Yes. ChangeLatch can include a GitHub repository and branch in AI prompts, or prepare an optional project ZIP. Your AI service must be able to access the selected code source.
+              Yes. Push your project to GitHub and choose an AI assistant that supports repository access. Grant access when required, especially for private repositories.
+              Before each round, ask the AI to read the latest relevant files and generate a PATCH from the current code. Paste the PATCH into ChangeLatch to review and apply the changes locally.
+              With GitHub auto-push enabled and a configured Git remote, ChangeLatch can commit and push applied changes. After a successful push, your AI assistant can access the updated repository for the next round.
+              Alternatively, use a project ZIP with an AI assistant that supports ZIP extraction and analysis, and provide an updated ZIP for subsequent rounds.
+              Not all AI assistants support GitHub or ZIP analysis. Repository access does not guarantee that every file can be analyzed at once; access permissions, file limits, and context limits depend on the AI provider.
             </p>
           </div>
 

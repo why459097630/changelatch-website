@@ -608,7 +608,7 @@ useEffect(() => {
                           Prepare your project
                         </div>
                         <div className="mt-2 text-[13px] leading-6 text-slate-500">
-                          Select your project and prepare GitHub or ZIP code context for AI.
+                          Choose an AI assistant with GitHub access or ZIP analysis support. Provide your repository or project ZIP and authorize access when needed.
                         </div>
                       </div>
 
@@ -620,7 +620,7 @@ useEffect(() => {
                           Generate a PATCH
                         </div>
                         <div className="mt-2 text-[13px] leading-6 text-slate-500">
-                          Send the structured prompt and accessible code source to your preferred AI to generate a PATCH.
+                          Ask your AI assistant to read the latest relevant project files and generate a ChangeLatch-compatible PATCH using the structured prompt.
                         </div>
                       </div>
 
@@ -632,7 +632,7 @@ useEffect(() => {
                           Apply safely
                         </div>
                         <div className="mt-2 text-[13px] leading-6 text-slate-500">
-                          Review exact matches and diffs, apply selected changes, and run project verification.
+                          Paste the PATCH into ChangeLatch, review and apply selected changes, and run project checks. Optionally enable GitHub auto-push to sync applied changes.
                         </div>
                       </div>
                     </div>
